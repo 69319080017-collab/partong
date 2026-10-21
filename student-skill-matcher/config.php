@@ -6,5 +6,6 @@ const MATCH_HIGH_THRESHOLD = 80;   // % Match ระดับสูง (น้�
 const MATCH_MID_THRESHOLD = 50;    // % Match ระดับกลาง (น้ำเงินฟ้า)
 const TARGET_REPRESENTATIVES = 8;  // จำนวนตัวแทนเป้าหมายที่ต้องการส่งแข่งทั้งหมด (คน)
 const MAX_SKILL_LEVEL = 5;         // ระดับคะแนนทักษะสูงสุด
+const SKILL_AVG_ALERT = 3;         // ค่าเฉลี่ยทักษะต่ำกว่านี้ให้แจ้งเตือน
 
 date_default_timezone_set('Asia/Bangkok');
