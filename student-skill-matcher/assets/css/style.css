@@ -1,0 +1,56 @@
+/* สไตล์ส่วนกลางของทุกหน้า */
+:root {
+  --navy: #1E3A8A;
+  --red: #C8102E;
+}
+body { font-family: 'Sarabun', Tahoma, sans-serif; background: #F4F6FB; color: #0F172A; }
+.text-navy { color: var(--navy); }
+.bg-navy { background: var(--navy); color: #fff; }
+
+/* Navbar: ขีดแดงใต้เมนูที่เปิดอยู่ */
+.navbar-brand { color: var(--navy); font-weight: 700; }
+.brand-mark { width: 36px; height: 36px; border-radius: 9px; background: var(--navy); }
+.navbar .nav-link { font-weight: 500; }
+.navbar .nav-link.active { color: var(--navy); font-weight: 700; box-shadow: inset 0 -3px 0 var(--red); }
+
+/* การ์ด */
+.card { border-color: #E2E8F0; border-radius: 12px; }
+.stat-card { border-top: 4px solid var(--navy); }
+.stat-card.accent { border-top-color: var(--red); }
+.stat-value { font-size: 2.1rem; font-weight: 700; color: var(--navy); line-height: 1.1; }
+
+/* ป้ายเกณฑ์ / ผ่านครบ */
+.chip { background: #EFF4FF; color: var(--navy); font-weight: 500; border-radius: 999px; padding: .25rem .65rem; font-size: .85rem; }
+.chip-demo { background: #FFF1F2; color: #9F1239; }
+.badge-pass { background: var(--navy); font-weight: 600; }
+
+/* อันดับ */
+.rank { width: 28px; height: 28px; border-radius: 50%; background: #E8EEFB; color: var(--navy); font-weight: 700; font-size: .875rem; }
+.rank-1 { background: var(--navy); color: #fff; }
+
+/* % Match */
+.progress { height: 8px; background: #E2E8F0; }
+.match-high { --c: #1D4ED8; }
+.match-mid  { --c: #3B82F6; }
+.match-low  { --c: var(--red); }
+.match-text { color: var(--c); font-weight: 700; }
+.progress-bar.match-high, .progress-bar.match-mid, .progress-bar.match-low { background: var(--c); }
+
+/* ระดับทักษะ 0-5 (0 = ยังไม่มีข้อมูล) */
+.lvl { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 30px; border-radius: 6px; font-weight: 700; }
+.lvl-0 { background: #F1F5F9; color: #64748B; }
+.lvl-1 { background: #EFF6FF; color: var(--navy); }
+.lvl-2 { background: #DBEAFE; color: var(--navy); }
+.lvl-3 { background: #93C5FD; color: #0F172A; }
+.lvl-4 { background: #3B82F6; color: #fff; }
+.lvl-5 { background: var(--navy); color: #fff; }
+.lvl-sm { width: 26px; height: 22px; font-size: .75rem; }
+
+/* หน้าแจ้งเตือน: สีตามระดับ เร่งด่วน = แดง, ควรติดตาม = ส้ม, ข้อมูล = น้ำเงิน */
+.lv-danger  { --c: var(--red); }
+.lv-warning { --c: #B45309; }
+.lv-info    { --c: var(--navy); }
+.count-card { border-top: 4px solid var(--c); }
+.count-value { font-size: 2.1rem; font-weight: 700; color: var(--c); line-height: 1.1; }
+.alert-item { border-left: 5px solid var(--c); }
+.level-pill { background: var(--c); color: #fff; font-weight: 600; }
